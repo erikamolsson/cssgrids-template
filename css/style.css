@@ -3,28 +3,50 @@ body {
 	background-size: 90%;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container {
+.grid-container{
   display: grid;
 
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+  width: 960px;
+  height: auto;
+  margin: 20px auto;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+
+  grid-template-areas: 'header header header header'
+    'menu menu menu menu'
+    'main main main right'
+    'footer footer footer footer';
   grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+.item1 { 
+  grid-area: header;
+  background-color: lightcyan;
+  padding: 20px;
+ }
+
+ .item2 { 
+  grid-area: menu; 
+  background-color: lightpink;
+  padding: 20px;
 }
+
+.item3 { 
+  grid-area: main; 
+  background-color: lightsteelblue;
+  padding: 20px;
+}
+
+.item4 { 
+  grid-area: right; 
+  background-color: moccasin;
+  padding: 20px;
+}
+
+.item5 { 
+  grid-area: footer; 
+  background-color: powderblue;
+  padding: 20px;
+} 
