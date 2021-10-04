@@ -49,4 +49,20 @@ body {
   grid-area: footer; 
   background-color: powderblue;
   padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
 } 
+
+.box1{
+  border: solid 1px palevioletred;
+}
+
+.box2{
+  border: solid 1px palevioletred;
+}
+
+.box3{
+  border: solid 1px palevioletred;
+}
