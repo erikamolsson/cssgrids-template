@@ -4,6 +4,10 @@ body {
   background-color: darkmagenta;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 .grid-container{
   display: grid;
 
@@ -115,10 +119,6 @@ body {
     column-gap: 2%;
     row-gap: 20px;
   }
-
-  .item2{
-    border: darkorange 10px dotted;
-  }
 }
 /* Media screen from 1200px to larger. */
 
@@ -134,7 +134,7 @@ body {
     width: 90%;
     height: auto;
     margin: 0 auto;
-  
+
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
   
@@ -145,10 +145,6 @@ body {
       'footer footer footer footer footer footer';
     column-gap: 2%;
     row-gap: 20px;
-  }
-
-  .item1{
-    border: black 10px dotted;
   }
 }
 /* Media screen from 960px to 1200px. */
